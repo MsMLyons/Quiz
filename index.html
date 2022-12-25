@@ -45,13 +45,13 @@
                         <ul class="answers-list">
                             <li>
                                 <label for="q1-a1">
-                                    <input type="radio" id="q1-a1" value="true"/>
+                                    <input type="radio" id="q1-a1" value="true" name="q1"/>
                                     True
                                 </label>
                             </li>
                             <li>
                                 <label for="q1-a2">
-                                    <input type="radio"id="q1-a2" value="false"/>
+                                    <input type="radio"id="q1-a2" value="false" name="q1"/>
                                     False
                                 </label>
                             </li>
@@ -65,13 +65,13 @@
                         <ul class="answers-list">
                             <li>
                                 <label for="q2-a1">
-                                    <input type="radio" id="q2-a1" value="true"/>
+                                    <input type="radio" id="q2-a1" value="true" name="q2"/>
                                     True
                                 </label>
                             </li>
                             <li>
                                 <label for="q2-a2">
-                                    <input type="radio" id="q2-a2" value="false"/>
+                                    <input type="radio" id="q2-a2" value="false" name="q2"/>
                                     False
                                 </label>
                             </li>
@@ -81,7 +81,26 @@
             </section>
             <section role="region" aria-labelledby="css-questions">
                 <h2 id="css-questions">CSS Questions</h2>
+                <div class="formrow">
+                    <div class="question-block">
+                        <label for="select">Is CSS harder to learn than HTML?</label>
+                    </div>
+                    <div class="answer">
+                        <select required id="select" name="css-q1>
+                            <option value="">Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="question-block">
+                        <label for="awesome-css">Is CSS your favorite language?</label>
+                    </div>
+                    <div class="answer">
+                        <textarea id="awesome-css" name="short-answer" rows="5" cols="30" placeholder="Yes, I love CSS"></textarea>
+                    </div>
+                </div>
             </section>
+            <input type="submit" value="Send" />
         </form>
     </main>
 </body>
